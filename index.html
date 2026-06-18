@@ -1479,6 +1479,39 @@
   }
 </style>
 
+
+<style>
+  /* Correção GitHub Pages: mantém a home preenchida e evita a imagem quebrada/esticada */
+  .hero-reference-exact {
+    position: relative !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+    background: #000 !important;
+  }
+
+  .hero-reference-image {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    z-index: 1 !important;
+  }
+
+  .hero-photo-smooth-overlay {
+    display: none !important;
+  }
+
+  .hero-reference-exact .top-layer,
+  .hero-reference-exact .bottom-left,
+  .hero-reference-exact .bottom-right {
+    z-index: 5 !important;
+  }
+</style>
+
 </head>
 
 <body>
